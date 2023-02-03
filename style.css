@@ -1,0 +1,105 @@
+/*               Main Nav               */
+nav {
+    font-family: arail;
+    height: 80px;
+    width: 100%;
+    background:rgba(32, 133, 28, 0.896) ;
+
+}
+ label.logo{
+    font-size: 50px;
+    line-height: 90px;
+    margin-left: 30px;
+    color: white;
+ }
+ nav ul{
+    float: right;
+    margin-right:40px;
+ }
+ nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 50px;
+    margin-left: 30px;
+ }
+ nav a{
+    color: white;
+    font-family: 'Segoe UI' ;
+    text-decoration-line: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+ }
+
+a.active, a:hover{
+    border:solid white;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+nav .Menu{
+    height: 30px;
+    margin-right: 40px; 
+    line-height: 110px;
+    float: right;
+    margin-top: 30px;
+    cursor: poiner;
+    display: none;
+}
+
+/* nav #menuIcon{
+    line-height: 110px;
+    float: right;
+    margin-right: 40px;
+    cursor: poiner;
+    display: none;
+} */
+
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 25px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 15px;
+    } 
+}
+
+@media (max-width: 900px){
+    nav .Menu{
+        display:block;
+        cursor: pointer;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(32, 133, 28, 0.896);
+        margin-top: 0px;
+        top : 80px;
+        padding-right: 80px;
+        padding-left: 15px;
+        left: -40px;
+        text-align: center;
+        transition: all 0.1s;
+        display: none;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 15px;
+    }
+    a.active, a:hover{
+        border: none;
+        color:black
+    }
+    nav ul.show{
+        display: block;
+        left: 0;
+    }
+}
