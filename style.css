@@ -3,8 +3,14 @@ nav {
     font-family: arail;
     height: 80px;
     width: 100%;
-    background:rgba(32, 133, 28, 0.896) ;
-
+    background:rgb(236, 151, 151)  ;
+    margin-bottom: 0;
+    position: fixed;
+    /* rgba(173, 122, 107, 0.896)
+    rgba(198, 110, 83, 0.896) 
+    rgba(198, 98, 83, 0.896)
+    rgba(223, 127, 127, 0.896) 
+    rgba(4, 97, 26, 0.772) */
 }
  label.logo{
     font-size: 50px;
@@ -102,4 +108,9 @@ nav .Menu{
         display: block;
         left: 0;
     }
+}
+.homeMNavImg{
+    margin-top: 0;
+    width: 100%;
+    height: 600px;
 }
