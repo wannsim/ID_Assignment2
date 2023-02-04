@@ -49,7 +49,7 @@ nav .Menu{
     line-height: 110px;
     float: right;
     margin-top: 30px;
-    cursor: poiner;
+    cursor: pointer;
     display: none;
 }
 
@@ -60,6 +60,12 @@ nav .Menu{
     cursor: poiner;
     display: none;
 } */
+.homeMainNav{
+    background-image: url("homeMain.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: calc(1550px - 1000px); 
+}
 
 @media (max-width: 1048px){
     label.logo{
@@ -82,7 +88,7 @@ nav .Menu{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: rgba(32, 133, 28, 0.896);
+        background-color: rgb(236, 151, 151);
         margin-top: 0px;
         top : 80px;
         padding-right: 80px;
