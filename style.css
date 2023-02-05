@@ -74,6 +74,7 @@ nav .Menu{
 .mainHeading{
     font-family:'New Gulim';
     text-align: center;
+    font-size: 50px;
 }
 
 .homeMainNav{
@@ -151,3 +152,55 @@ nav .Menu{
     height: 600px;
 }
 
+
+
+
+
+/* recipes page */
+.allrecipes h2{
+    margin-left: 60px;
+    font-size: 40px;
+    font-family: STXihei;
+}
+
+.recipeItem{
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
+.savebtn{
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    background-color:rgb(236, 151, 151);
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.savebtn:hover{
+    color:rgb(236, 151, 151);
+    background: white;
+    transition: 0.4s;
+}
+
+.recipeItem{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+    gap: 1.5rem;
+}
+.recipebox{
+    position:static;
+}
+.recipebox:hover{
+    padding: 5px;
+    /* border: 1px solid; */
+    transition: 0.4s;
+}
+.recipeTitle{
+    font-size: 25px;
+    font-family: Segoe UI;
+}
+.recipeImg{
+    width: 200px;
+    border-radius: 10px;
+}
