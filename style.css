@@ -11,7 +11,7 @@
 }
 .recipeTitle{
     font-size: 25px;
-    font-family: Segoe UI;
+    font-family: 'Segoe UI';
 }
 @media (max-width: 900px){
     .mainHeading{
@@ -45,7 +45,6 @@
  }
 
 nav {
-    font-family: arail;
     height: 80px;
     width: 100%;
     background:rgb(236, 151, 151)  ;
@@ -136,8 +135,8 @@ nav .Menu{
 
 
 @media (max-width: 1048px){
-    label.logo{
-        font-size: 25px;
+    .logoImg{
+        margin-left:30px;
     }
     nav ul{
         margin-right: 20px;
@@ -225,17 +224,58 @@ nav .Menu{
     position:static;
 }
 .recipebox:hover{
-    padding: 5px;
-    /* border: 1px solid; */
-    transition: 0.4s;
+    /* padding: 5px; */
+    border: 1px solid;
+    transition: 0.1s;
 }
 .recipeImg{
     width: 200px;
     border-radius: 10px;
 }
+.recipeCat{
+    font-weight: lighter;
+}
 
 @media (max-width: 900px){
     .recipeImg{
         width: 150px;
+    }
+}
+
+
+
+/* profile page */
+
+.pfp{
+    border-radius: 50%;
+    margin-left: 170px;
+    width: 300px;
+}
+.username{
+    font-size: 50px;
+    font-family: STXihei;
+    font-weight: lighter;
+    margin-left:50%;
+    margin-top: 150px;
+}
+.profileSave{
+    font-family: 'Comic Sans MS';
+    font-weight: lighter;
+    margin-left: 45%;
+    margin-top: 90px;
+    font-size: 40px;
+}
+
+@media (max-width: 900px){
+    .pfp{
+        width: 100px;
+        margin-left:30px;
+    }
+    .username{
+        font-size: 30px;
+        margin-top: 60px;
+    }
+    .profileSave{
+        font-size:25px;
     }
 }
