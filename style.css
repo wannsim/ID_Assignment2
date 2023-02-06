@@ -132,6 +132,12 @@ nav .Menu{
     background-size: cover; 
     height: calc(1550px - 1000px); 
 }
+.indivdishMainNav{
+    background-image: url("chickensoup.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: calc(1550px - 1000px); 
+}
 
 
 @media (max-width: 1048px){
