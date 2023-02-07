@@ -9,52 +9,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>
-    <!-- <section class = 'logInMainNav'>
-      <header>
-        <nav>
-          <label class="logo"><img src = "logo.png" class = "logoImg"></label>
-          <ul>
-            <li><a href="Homepage.html">Home</a></li>
-            <li><a href="Recipes.html">Recipes</a></li>
-            <li><a href="Profilepage.html">Profile</a></li>
-          </ul>
-          <label id = "menuIcon" class = "menuIcon"><img src = "MenuIcon.png" class = "Menu"></label>
-        </nav>
-      </header>
-    </section> -->
-    <!-- <h1 class = 'mainHeading'>Login</h1>  -->
+   
 
-    <!-- <section class = "loginContainer">
-        <div class = "form">
-            <h1 class = "logInheading">Login</h1>
-            <div class = 'input'>
-                <input type = "email" placeholder="Enter email" autocomplete = "off" class = "email" required>
-                <input type = "password" placeholder="Enter Password" autocomplete = "off" class = "password" required>
-            </div>
-        </div>
-    </section>
-     -->
      <section class = "wholeLogin">
         <div class = "wrapper">
-          <span class="closeIcon"><ion-icon name="close-outline"></ion-icon></span>
+          <nav class="closeIcon">
+            <a href = "Profilepage.html"><ion-icon name="close-outline"></ion-icon></a>
+          </nav>
           <!-- login -->
             <div class = "loginContainer">
                 <h2>Login</h2>
                 <form action="#">
                     <div class = "inputBox">
-                        <!-- <span class = "icon"></span> -->
                         <label class = "emailLabel">Email: </label>
                         <input type = "email" required>
                     </div>
                     <div class = "inputBox">
-                        <!-- <span class = "icon"></span> -->
                         <label class = "pwLabel">Password: </label>
                         <input class = "pw" type = "password" required >
                     </div>
-                    <div class="remember-forgot">
+                    <!-- <div class="remember-forgot">
                         <label><input type = "checkbox" > Remember me</label>
                         <a href = "#"> Forgot password?</a>
-                    </div>
+                    </div> -->
                     <button type = "submit" class = "submitLogin">Login</button>
                     <div class = "login-register">
                         <p>
@@ -71,22 +48,19 @@
               <h2>Register</h2>
               <form action="#">
                 <div class = "inputBox">
-                  <!-- <span class = "icon"></span> -->
                   <label class = "userNLabel">UserName: </label>
                   <input type = "text" required>
               </div>
                   <div class = "inputBox">
-                      <!-- <span class = "icon"></span> -->
                       <label class = "emailLabel">Email: </label>
                       <input type = "email" required>
                   </div>
                   <div class = "inputBox">
-                      <!-- <span class = "icon"></span> -->
                       <label class = "pwLabel">Password: </label>
                       <input class = "pw" type = "password" required >
                   </div>
                   <div class="remember-forgot">
-                      <label><input type = "checkbox" > Agree to terms and conditions</label>
+                      <label><input type = "checkbox" required> Agree to terms and conditions</label>
                   </div>
                   <button type = "submit" class = "submitLogin">Register</button>
                   <div class = "login-register">
