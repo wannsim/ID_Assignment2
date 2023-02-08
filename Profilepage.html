@@ -16,7 +16,7 @@
           <li><a href="Homepage.html">Home</a></li>
           <li><a href="Recipes.html">Recipes</a></li>
           <!-- <li><a class="active" href="Profilepage.html">Profile</a></li> -->
-          <li><a class="active" href="logIn.html">Profile</a></li>
+          <li><a class="active checklogin" href="logIn.html">Login</a></li>
         </ul>
         <label id = "menuIcon" class = "menuIcon"><img src = "MenuIcon.png" class = "Menu"></label>
       </nav>
@@ -28,27 +28,32 @@
     <h1 class = "username">UserName</h1>
 
     <h2 style="clear: left;" class = "profileSave">Saved</h2>
-    <section class = "recipeContainer" class = 'lastrecipes'>
-      <div class = "recipeItem">
-        <div class = "recipebox" class = 'firstrecipe'>
-            <img src = "chickensoup.jpg" class = "recipeImg" >
-            <p class = "recipeTitle">Chicken soup</p>
-            <button class = "savebtn" type="button" >Remove</button>
+    <div class = 'save'>
+      <div class ='saveContent'>
+        <section class = "saveContainer"'>
+          <div class = "saveItem">
+            <!-- <div class = "savebox">
+                <img src = "chickensoup.jpg" class = "saveImg" >
+                <p class = "saveTitle">Chicken soup</p>
+                <button class = "removebtn" type="button" >Remove</button>
+            </div>
+
+            <div class = "savebox">
+              <img src = "chickensoup.jpg" class = "saveImg" >
+              <p class = "saveTitle">Chicken soup</p>
+              <button class = "removebtn" type="button" >Remove</button>
+          </div>
+
+          <div class = "savebox">
+            <img src = "chickensoup.jpg" class = "saveImg" >
+            <p class = "saveTitle">Chicken soup</p>
+            <button class = "removebtn" type="button" >Remove</button>
         </div>
-
-        <div class = "recipebox">
-          <img src = "chickensoup.jpg" class = "recipeImg" >
-          <p class = "recipeTitle">Chicken soup</p>
-          <button class = "savebtn" type="button" >Remove</button>
+          </div> -->
+        </section>
       </div>
-
-      <div class = "recipebox">
-        <img src = "chickensoup.jpg" class = "recipeImg" >
-        <p class = "recipeTitle">Chicken soup</p>
-        <button class = "savebtn" type="button" >Remove</button>
     </div>
-      </div>
-    </section>
     <script src="./Profilepage.js"></script>
+    <script src="./logIn.js"></script>
   </body>
 </html>

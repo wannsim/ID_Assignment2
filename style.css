@@ -298,6 +298,59 @@ nav .Menu{
         font-size:25px;
     }
 }
+/* saved */
+
+.saveItem{
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.removebtn{
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 23px;
+    background-color:rgb(236, 151, 151);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.removebtn:hover{
+    color:rgb(236, 151, 151);
+    background: white;
+    transition: 0.4s;
+}
+
+.saveItem{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+    gap: 1.5rem;
+}
+.savebox{
+    position:static;
+    margin-left: 40px;
+    /* padding-left: 25%; */
+}
+.savebox:hover{
+    padding: 3px;
+    /* border: 1px solid; */
+    transition: 0.1s;
+}
+.saveImg{
+    width: 200px;
+    border-radius: 10px;
+}
+@media (max-width: 900px){
+    .recipeImg{
+        width: 150px;
+    }
+}
+.saveTitle{
+    font-size: 30px;
+    
+}
+
 
 
 /* login */
