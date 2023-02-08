@@ -597,3 +597,25 @@ h3{
     padding-right: 30px;
 }
 
+.name{
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+.comment{
+    font-size:20px;
+    margin-top: 0px;
+}
+.discuss h2{
+    margin-left:-25px;
+}
+.discuss{
+    margin-left:-50px;
+}
+.commented{
+    border: 1px solid;
+    padding-left:80px;
+    padding-top: 30px;;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
