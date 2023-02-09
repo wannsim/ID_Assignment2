@@ -32,6 +32,28 @@ if (clicked = true){
 
 
 
+
+
+// api
+var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": "https://laoniangcooks-9a89.restdb.io/rest/member",
+    "method": "GET",
+    "headers": {
+      "content-type": "application/json",
+      "x-apikey": "63e4e788478852088da67f34",
+      "cache-control": "no-cache"
+    }
+  }
+
+
+  $.ajax(settings).done(function (response) {
+    console.log(response);
+  });
+
+
+
 // // onclick= "location.href = 'Profilepage.html'"
 // const loginBtn = `<button type = "submit" class = "submitLogin">Login</button>`
 // var input = $(' div .loginBtnInput')
