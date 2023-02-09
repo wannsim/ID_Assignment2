@@ -16,6 +16,7 @@ login.addEventListener('click', function(){
 const loginBtn = `<button onclick= "location.href = 'Profilepage.html'" type = "submit" class = "submitLogin">Login</button>`
 var input = $(' div .loginBtnInput')
 input.append(loginBtn)
+
 var btn = $('button .submitLogin')
 btn.on("click", function(){
     let clicked = true

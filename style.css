@@ -100,8 +100,8 @@ nav .Menu{
     cursor: poiner;
     display: none;
 } */
-
-/* .mainHeading:after{
+/* 
+.mainHeading:after{
     content: '';
     position:absolute;
     top: 0;
@@ -205,9 +205,6 @@ nav .Menu{
     width: 100%;
     height: 600px;
 }
-
-
-
 
 
 /* recipes page */
@@ -481,6 +478,16 @@ nav .Menu{
 } 
 
 .submitLogin{
+    width: 100%;
+    height: 45px;
+    font-size: 25px;
+    background-color: rgb(236, 151, 151);
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+.submitRegister{
     width: 100%;
     height: 45px;
     font-size: 25px;
