@@ -227,6 +227,8 @@ nav .Menu{
     color:rgb(236, 151, 151);
     background: white;
     transition: 0.4s;
+    cursor: pointer;
+
 }
 
 .recipeItem{
@@ -597,11 +599,13 @@ h3{
 .vol .changes button{
     padding-left: 30px;
     padding-right: 30px;
+    cursor: pointer;
 }
 
 .measurements .weight button{
     padding-left: 30px;
     padding-right: 30px;
+    cursor: pointer;
 }
 
 .name{
@@ -626,3 +630,25 @@ h3{
     margin-bottom: 60px;
     margin-top: 50px;
 }
+
+
+
+
+/* homepage */
+
+.aboutUsheading, .contactUsheading{
+    font-size: 50px;
+    padding-left: 50px;
+    background-color: rgb(236, 151, 151);
+    padding-left: 0px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.aboutInfo{
+    font-size: 25px;
+}
+
+
+
+
