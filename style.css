@@ -133,7 +133,7 @@ nav .Menu{
     height: calc(1550px - 1000px); 
 }
 .indivdishMainNav{
-    background-image: url("chickensoup.jpg") ;
+    background-image: url("recipesMain.jpg") ;
     background-repeat: no-repeat;
     background-size: cover; 
     height: calc(1550px - 1000px); 
@@ -253,7 +253,9 @@ nav .Menu{
 .recipeCat{
     font-weight: lighter;
 }
-
+.ingredientsInfo p, .stepsInfo p, .discuss h2{
+    margin-right: -130px;
+}
 @media (max-width: 900px){
     .recipeImg{
         width: 150px;
@@ -616,11 +618,11 @@ h3{
     font-size:20px;
     margin-top: 0px;
 }
-.discuss h2{
-    margin-left:-25px;
+.discuss h2, .stepsInfo H2{
+    margin-left:25px;
 }
-.discuss{
-    margin-left:-50px;
+.discuss, .stepsInfo{
+    margin-left:200px;
 }
 .commented{
     border: 1px solid;
