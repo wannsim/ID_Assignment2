@@ -68,12 +68,9 @@
                     let content = "";
                     //input of username and pw
                     let emailinput = $("#emailinput").val();
-                    console.log(emailinput);
                     let pwinput = $("#pw").val();
-                    console.log(pwinput);
                     var recordfound = 0;
                     for (var i = 0; i < response.length; i++) {
-                        console.log(response[i].email);
                         if ((response[i].email == emailinput) && (response[i].password == pwinput)){
                                 recordfound = 1;
                                 document.location = "profilepage.html";
