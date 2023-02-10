@@ -1,14 +1,15 @@
-const wrapper = document.querySelector('.wrapper');
-const login = document.querySelector('.loginNav');
-const register = document.querySelector('.registerNav');
+//  const wrapper = document.querySelector('.wrapper');
+//  const login = document.querySelector('.loginNav');
+//  const register = document.querySelector('.registerNav');
 
-register.addEventListener("click", function(){
-    wrapper.classList.add('active')
-})
+// register.addEventListener("click", function(){
+//     wrapper.classList.add('active');
+// })
 
-login.addEventListener('click', function(){
-    wrapper.classList.remove('active')
-})
+// login.addEventListener('click', function(){
+//     wrapper.classList.remove('active');
+// })
+
 
 
 
@@ -31,15 +32,10 @@ login.addEventListener('click', function(){
 // }
 
 
-//input of username and pw
-let userNinput = $(".emailInput").val()
-console.log(userNinput)
-let pwinput = $(".pw").val()
 
 
 $(document).ready(function(){
     getMember();
-
     $('.submitRegister').on("click", function(e){
         e.preventDefault();
         let memberuserN = $(".userNLabel");
@@ -94,25 +90,28 @@ $(document).ready(function(){
               "cache-control": "no-cache"
             }
           }
-          
 
           $.ajax(settings).done(function (response) {
             let content = "";
-
+            //input of username and pw
+            let userNinput = $("#emailInput").val()
+            console.log(userNinput)
+            let pwinput = $("#pw").val()
+            console.log(pwinput)
             for (var i = 0; i < response.length; i++) {
                 if (response[i].email == userNinput){
-                    console.log("username")
+                    console.log(response[i].username);
                     if (response[i].password == pwinput){
                         // const exit = `onclick= "location.href = 'Profilepage.html'" `
-                        $(".submitLogin").attr('onclick', "location.href = 'Profilepage.html'")
+                        $(".loginBtnInput button").attr("onclick", "location.href = 'Profilepage.html'")
                     }
                     else{
                         alert("Incorrect Password. Please try again.")
                     }
                 }
-                else{
-                    // alert("Account does not exist. Register an account.")
-                }
+                // else{
+                //     alert("Account does not exist. Register an account.")
+                // }
                 
                 //[METHOD 1]
                 //let's run our loop and slowly append content
