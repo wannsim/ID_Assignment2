@@ -21,23 +21,26 @@
             <!-- register -->
             <div class = "registerContainer">
               <h2>Register</h2>
-              <form class = "registerForm" action="#">
+              <form class = "registerForm" action="register.html">
                 <div class = "inputBox">
                   <label class = "userNLabel">UserName: </label>
-                  <input type = "text" required>
+                  <input type = "text" id= "username" name = "username" required>
               </div>
                   <div class = "inputBox">
                       <label class = "emailLabel">Email: </label>
-                      <input type = "email" required>
+                      <input type = "email" id = "emailinput" name = "emailinput"required>
                   </div>
                   <div class = "inputBox">
                       <label class = "pwLabel">Password: </label>
-                      <input class = "pw" type = "password" required >
+                      <input class = "pw" id= "pw" name = "pw" type = "password" required >
                   </div>
                   <div class="remember-forgot">
                       <label><input type = "checkbox" required> Agree to terms and conditions</label>
                   </div>
-                  <button type = "submit" class = "submitRegister">Register</button>
+                  <div class = "loginBtnInput" >
+                    <button onclick='javascript:updateMember();' type = "button" class = "submitLogin">Register</button>
+                </div>
+                  <!-- <button type = "submit" class = "submitRegister">Register</button> -->
                   <div class = "login-register">
                       <p>
                           Already have an account?<a href = "logIn.html" class = "loginNav"> Login</a>
@@ -48,6 +51,79 @@
         </div>
     </section>
 
+
+    <script>
+      function updateMember(){
+        let username = $("#username").val();
+        let emailinput = $("#emailinput").val();
+        let pwinput = $("#pw").val();
+        let jsondata = {
+          "userName": username,
+          "email": emailinput, 
+          "password":  pwinput
+        }
+        let settings = {
+          "async": true,
+          "crossDomain": true,
+          "url": "https://laoniangcooks-9a89.restdb.io/rest/member",
+          "method": "POST",
+          "headers": {
+            "content-type": "application/json",
+            "x-apikey": "63e4e788478852088da67f34",
+            "cache-control": "no-cache"
+          },
+          "processData": false,
+          "data": JSON.stringify(jsondata)
+
+          }
+        
+
+        $.ajax(settings).done(function (response) {
+          document.location = "logIn.html";
+          alert("Registration successful!")
+        })
+      }
+        // var jsondata = {"userName": username,"email": emailinput, "password":  pwinput};
+        // var settings = {
+        //   "async": true,
+        //   "crossDomain": true,
+        //   "url": "https://laoniangcooks-9a89.restdb.io/rest/member/(userName)",
+        //   "method": "PUT",
+        //   "headers": {
+        //     "content-type": "application/json",
+        //     "x-apikey": "63e4e788478852088da67f34",
+        //     "cache-control": "no-cache"
+        //   },
+        //   "processData": false,
+        //   "data": JSON.stringify(jsondata)
+        // }
+      
+
+       
+                 
+                // $.ajax(settings).done(function (response) {
+                //          let content = "";
+                //          //input of username and pw
+                //          let emailinput = $("#emailinput").val();
+                //          let pwinput = $("#pw").val();
+                //          var recordfound = 0;
+                //          for (var i = 0; i < response.length; i++) {
+                //              if ((response[i].email == emailinput) && (response[i].password == pwinput)){
+                //                      recordfound = 1;
+                //                      document.location = "profilepage.html";
+                //                      alert("Login successful!")
+                //              }
+                            
+                //          }
+                //          if (recordfound == 0){
+                //              alert("Incorrect login. Please check your username and password.");
+                //          }
+                         
+                //      })
+         
+                //  }
+         </script>
+     
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

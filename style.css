@@ -383,7 +383,7 @@ nav .Menu{
     width: 100%;
     padding:40px;
 }
-.wrapper .loginContainer{
+/* .wrapper .loginContainer{
     transition: transform .18s ease;
     transform: translateX(0);
 }
@@ -402,7 +402,7 @@ nav .Menu{
 .wrapper.active .registerContainer{
     transition: transform .18s ease;
     transform: translateX(0);
-}
+} */
 
 
 .wrapper .closeIcon{
@@ -532,7 +532,7 @@ h3{
     font-size: 20px;
 }
 
- h2  {
+.ingredients {
     font-size:35px;
     margin-left: 230px;
 }

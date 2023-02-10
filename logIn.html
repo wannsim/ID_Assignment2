@@ -60,6 +60,11 @@
                     "content-type": "application/json",
                     "x-apikey": "63e4e788478852088da67f34",
                     "cache-control": "no-cache"
+                    },
+                    "beforeSend": function(){
+                        $('.submitLogin').prop("disabled", true);
+                        const loading = `<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_bsXXgHRDfD.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>`
+                        $('.loginBtnInput').append(loading);
                     }
                 }
    
@@ -74,6 +79,7 @@
                         if ((response[i].email == emailinput) && (response[i].password == pwinput)){
                                 recordfound = 1;
                                 document.location = "profilepage.html";
+                                alert("Login successful!")
                         }
                        
                     }
