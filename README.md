@@ -45,6 +45,10 @@
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
   - The project uses css to style the website
 
+## wireframe
+
+[Mobile and desktop view](ID_laoniangcooks_wireframe)
+
 ## Credits
 
 https://www.pinterest.com/pin/315955730121781345/
