@@ -6,7 +6,7 @@ $(document).ready(function(){
 })
 
 //-------------------------recipes page
-//"Save" to "Saved"
+// sinyu: "Save" to "Saved"
 $('.savebtn').click(function() {
     $(this).html('Saved');
 });
